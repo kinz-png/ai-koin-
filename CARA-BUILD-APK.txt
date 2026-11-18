@@ -1,0 +1,23 @@
+MICIN AI SCREENER v0.4.0 — CARA MEMBUAT APK
+
+CARA TERMUDAH (GITHUB ACTIONS)
+1. Ekstrak ZIP proyek ini.
+2. Buat repository GitHub baru dan upload seluruh isi folder proyek.
+3. Pastikan branch bernama main atau master.
+4. Buka tab Actions. Pilih workflow “Build MICIN AI APK”.
+5. Tekan Run workflow dan tunggu sampai selesai.
+6. Unduh artifact “MICIN-AI-Scanner-0.4.0”. Ekstrak artifact untuk memperoleh app-debug.apk.
+7. Pindahkan APK ke Android dan pasang. Android mungkin meminta izin “Install unknown apps”.
+
+CARA ANDROID STUDIO
+1. Buka folder proyek di Android Studio.
+2. Gunakan JDK 17 dan Android SDK 35.
+3. Tunggu Gradle Sync selesai.
+4. Pilih Build > Build Bundle(s) / APK(s) > Build APK(s).
+5. APK debug biasanya berada di app/build/outputs/apk/debug/app-debug.apk.
+
+IZIN FLOATING
+Buka aplikasi, tekan FLOATING, lalu izinkan “Display over other apps / Tampil di atas aplikasi lain”. Kembali ke aplikasi dan tekan FLOATING lagi. Untuk menghentikan overlay, tekan TUTUP FLOATING.
+
+CATATAN
+Proyek ini menyediakan source code dan workflow build, bukan APK yang sudah dikompilasi/diuji. Build debug bukan build release bertanda tangan. Skor hanyalah heuristik data pasar, bukan audit keamanan atau sinyal trading.
